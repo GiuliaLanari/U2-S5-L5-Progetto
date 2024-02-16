@@ -360,4 +360,7 @@ h5 {
   .sezione3-main div {
     position: static;
   }
+  .box > img {
+    width: 40%;
+  }
 }
