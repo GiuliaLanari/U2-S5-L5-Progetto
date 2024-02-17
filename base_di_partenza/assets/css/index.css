@@ -295,7 +295,120 @@ h5 {
   transition-delay: 0.25s;
 }
 
-@media screen and (min-width: 768px) and (max-width: 800px) {
+@media screen and (max-width: 767px) {
+  .a-off {
+    display: none;
+  }
+  .menù {
+    padding-block: 1rem;
+    padding-inline: 0rem;
+  }
+  .menù img {
+    width: 8rem;
+  }
+  section svg {
+    display: none;
+  }
+  .start-reading {
+    display: inline-block;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  section p {
+    font-size: 18px;
+  }
+  section button {
+    font-size: 16px;
+    padding-inline: 1.5rem;
+    margin-block-end: 2rem;
+  }
+  .start-reading > section:first-of-type {
+    padding-inline-start: 2rem;
+    margin-block-start: 40px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  .primo-titolo img {
+    width: 25px;
+  }
+  main {
+    margin-inline: 0.5rem;
+  }
+  .sezione1-main {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: none;
+  }
+  .contenitore {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .contenitore div {
+    flex-grow: 1;
+  }
+  .more-site a {
+    padding: 0.4rem 0.4rem;
+    border-radius: 2px;
+    font-size: 11px;
+  }
+  .sezione3-main {
+    margin-inline: 1rem;
+    margin-block-end: 0.9rem;
+  }
+  .border-more {
+    padding-block-end: 1rem;
+  }
+  .info {
+    margin-block-start: 1rem;
+  }
+  .info a {
+    font-size: 11px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .p-piccole {
+    font-size: 11px;
+  }
+  .p-piccole {
+    padding-inline-start: 0.5rem;
+    padding-block-end: 0px;
+  }
+  .piccola {
+    padding-inline: 0px;
+  }
+  .box {
+    padding-inline: 0rem;
+    margin-block-end: 3rem;
+  }
+  .box > img {
+    width: 35%;
+  }
+  .box div {
+    margin-inline-end: 0rem;
+  }
+  .box div img {
+    width: 16px;
+  }
+  .bookmark {
+    position: static;
+  }
+  .ultima-f {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bordo {
+    cursor: none;
+  }
+  h5 {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen /*and (min-width: 768px) */ and (max-width: 800px) {
   header a {
     font-size: 16px;
   }
@@ -331,6 +444,9 @@ h5 {
     width: 50%;
     padding: 3px;
     transition: none;
+  }
+  .contenitore div {
+    flex-grow: 1;
   }
   .contenitore:hover {
     transition: none;
