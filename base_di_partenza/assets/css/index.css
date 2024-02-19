@@ -77,6 +77,15 @@ button {
   top: 0;
   background-color: #ffc017;
   z-index: 10;
+  transition: 0.5s;
+}
+.menù.scrolled {
+  background-color: white;
+}
+
+.btn-menù.scrolled {
+  background-color: #1a8917;
+  color: white;
 }
 
 .start-reading {
