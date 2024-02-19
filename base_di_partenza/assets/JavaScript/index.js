@@ -1,32 +1,17 @@
 const menu = document.querySelector(".menù");
-const bottone = document.querySelector(".btn-menù");
+const bottone = document.querySelector(".get-started");
 
-window.onscroll = function (e) {
+function cambioColore() {
   console.log(window.scrollY);
-  const scrollY = window.screenY;
+  const scrollY = window.scrollY;
 
   if (scrollY >= 300) {
-    menu.classList.add("scrolled");
-    bottone.classList.add("scrolled");
+    menu.style.backgroundColor = "white";
+    bottone.style.backgroundColor = "#1a8917";
   } else {
-    menu.classList.remove("scrolled");
-    bottone.classList.remove("scrolled");
+    menu.style.backgroundColor = "#ffc017";
+    bottone.style.backgroundColor = "black";
   }
-};
-/*
-window.addEventListener("scroll", function () {
-  const menu = document.querySelector(".menù");
-  const bottone = document.querySelector(".btn-menù");
-  const altazzaCambio = document.querySelector(".startReading");
-  const altezzaPunto = height.getBoundingClientRect().top;
-  const menuAltezza = menu.offsetHeight;
+}
 
-  if (altezzaPunto < menuAltezza) {
-    menu.classList.add("scrolled");
-    bottone.classList.add("scrolled");
-  } else {
-    menu.classList.remove("scrolled");
-    bottone.classList.remove("scrolled");
-  }
-});
-*/
+window.addEventListener("scroll", cambioColore);
