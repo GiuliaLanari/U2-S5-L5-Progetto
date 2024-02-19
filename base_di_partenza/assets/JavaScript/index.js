@@ -2,15 +2,16 @@
 const menu = document.querySelector(".menù");
 const bottone = document.querySelector(".btn-menù")
 
-window.addEventListener("scroll", function () {
+window.addEventListener.menu("scroll", cambioColoreMenu () {
   document.getElementById("showScroll").innerHTML = window.pageY0ffset +"px";
 console.log(showScroll)
 });
-
-
-onscroll= (event)=> {
-
-
+}
+const cambioColoreMenu = ()=> {
+  if (scrollY=== 10px) {
+     menu.style.backgraundColor = "white";
+  bottone.style.backgraundColor = "#1a8917";
+  }
 }
 */
 
